@@ -13,6 +13,32 @@ img {
 main {
   max-width: 1200px;
 }
+¨
+
+/*************************03_cremekrukken***************************/
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left img {
+  grid-template-columns: 1/2;
+  max-width: 400px;
+}
+
+.left .text {
+  grid-template-columns: 2/3;
+}
 
 /********************04_animation*******************/
 
