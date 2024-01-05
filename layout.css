@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  max-width: 1200px;
+}
+
 /********************04_animation*******************/
 
 /**********billede i toppen med overskriften**********/
@@ -37,4 +53,54 @@
 
 .text_allign_right {
   text-align: right;
+}
+
+/************************05 pleasant **********************/
+
+@media only screen and (min-width: 800px) {
+  .container_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto; /* Default to auto rows */
+    gap: 10px; /* Adjust the gap based on your design */
+    text-align: left;
+  }
+  .paragraph_1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_3 {
+    grid-column: span 1;
+    grid-row: span 2; /* Takes up 2 rows */
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .container_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; /* Default to auto rows */
+    gap: 10px; /* Adjust the gap based on your design */
+    text-align: left;
+  }
+  .paragraph_1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_3 {
+    grid-column: span 2; /* Takes up 2 columns */
+    grid-row: span 1;
+  }
 }
