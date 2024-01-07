@@ -12,6 +12,7 @@ img {
 
 main {
   max-width: 1200px;
+  margin: 0 auto 0 auto;
 }
 ¨
 
@@ -38,6 +39,20 @@ li {
 
 .left .text {
   grid-template-columns: 2/3;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right img {
+  grid-template-columns: 2/3;
+  max-width: 600px;
+}
+
+.right .text {
+  grid-template-columns: 1/2;
 }
 
 /********************04_animation*******************/
