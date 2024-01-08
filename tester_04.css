@@ -20,20 +20,6 @@ main {
   margin: 0 auto 0 auto;
 }
 
-.sprite {
-  width: 1100px;
-  height: 200px;
-  padding-top: 20px; /* Adjust the top padding as needed */
-  padding-bottom: 20px; /* Adjust the bottom padding as needed */
-}
-
-.pattern-background {
-  width: 1100px;
-  height: 200px;
-  background: url("img/svg/SVG/fullcurve.svg") repeat-x;
-  background-size: 30% 100%;
-}
-
 @media only screen and (min-width: 701px) {
   .left-right {
     display: grid;
@@ -51,13 +37,11 @@ main {
 
 /*************************03_cremekrukken***************************/
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.img_1 {
+.pattern-background {
+  width: 1100px;
+  height: 200px;
+  background: url("img/svg/SVG/fullcurve.svg") repeat-x;
+  background-size: 30% 100%; /* Adjust the percentage as needed */
 }
 
 ul {
@@ -69,7 +53,7 @@ li {
   margin-bottom: 10px;
 }
 
-/* .big_img {
+.big_img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -87,7 +71,7 @@ p {
 .left {
   display: grid;
   grid-template-columns: 1fr 1fr;
-} */
+}
 
 /********************04_animation*******************/
 * {
