@@ -15,27 +15,21 @@ main {
   margin: 0 auto 0 auto;
 }
 
-.left img {
-  grid-template-columns: 1/2;
-  max-width: 600px;
-}
+@media only screen and (min-width: 701px) {
+  .left-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.left .text {
-  grid-template-columns: 2/3;
-}
+  .right {
+    grid-template-columns: 2/3;
+    max-width: 600px;
+  }
 
-.right {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.right img {
-  grid-template-columns: 2/3;
-  max-width: 600px;
-}
-
-.right .text {
-  grid-template-columns: 1/2;
+  .left {
+    grid-template-columns: 1/2;
+    max-width: 600px;
+  }
 }
 
 /*************************03_cremekrukken***************************/
