@@ -1,0 +1,102 @@
+/* Common styles for all screen sizes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-size: calc(16px + 1vw);
+  line-height: calc(1.5 + 0.1vw);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+.sprite_container {
+  padding-top: 15vh; /* Adjust the top padding as needed */
+  padding-bottom: 15vh; /* Adjust the bottom padding as needed */
+  overflow: hidden;
+}
+
+.pattern-background {
+  width: 100%;
+  height: 10vw; /* Adjusted to a percentage of the viewport width */
+  background: url("img/svg/SVG/fullcurve.svg");
+  background-repeat: repeat-x; /* Ensure the pattern repeats along the x-axis */
+  background-size: auto 100%; /* Adjusted to auto for the x-axis and 100% for the y-axis */
+}
+
+.pil {
+  transform: rotate(90deg);
+}
+/*********TABLET********/
+
+/**********PC************/
+
+@media only screen and (min-width: 701px) {
+  .left-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .right {
+    grid-column: 2/3;
+  }
+
+  .left {
+    grid-column: 1/2;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .float {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .text {
+    max-width: calc(50% - 10px); /* Adjust the width as needed */
+  }
+
+  .float-right {
+    max-width: calc(50% - 10px); /* Adjust the width as needed */
+    max-height: 200px; /* Set a max-height for the container */
+    overflow-x: scroll; /* Changed to scroll for horizontal scrollbar */
+    white-space: nowrap;
+  }
+
+  .float-right img {
+    width: 400px; /* Set a fixed width for the images */
+    height: 200px; /* Set a fixed height for the images */
+    margin-right: 5px; /* Adjust the margin as needed */
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .left-middle-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .left_02 {
+    grid-column: 1/2;
+  }
+
+  .middle {
+    grid-column: 2/3;
+  }
+
+  .right_02 {
+    grid-column: 3/4;
+  }
+}

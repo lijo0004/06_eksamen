@@ -1,0 +1,6 @@
+.float-right {
+  max-width: calc(50% - 10px); /* Adjust the width as needed */
+  max-height: 200px; /* Set a max-height for the container */
+  overflow-x: scroll; /* Changed to scroll for horizontal scrollbar */
+  white-space: nowrap;
+}
