@@ -56,6 +56,21 @@ main {
   }
 }
 
+/* Updated code for mobile to enable horizontal scrolling for .float-right images */
+@media only screen and (max-width: 700px) {
+  .float-right {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks to keep items in a single line */
+  }
+
+  .float-right img {
+    width: 400px; /* Set a fixed width for the images */
+    height: 200px; /* Set a fixed height for the images */
+    margin-right: 5px; /* Adjust the margin as needed */
+    display: inline-block; /* Display images in a single line */
+  }
+}
+
 /* Updated code for mobile to center .makeover content horizontally */
 @media only screen and (max-width: 700px) {
   .makeover {
