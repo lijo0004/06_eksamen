@@ -45,6 +45,39 @@ main {
     width: 20%;
     margin: 5% 5% 5% 40%;
   }
+  .before,
+  .after {
+    width: 80%; /* Adjust the width as needed for smaller screens */
+    height: auto;
+  }
+
+  .tall {
+    width: 30%; /* Adjust the width as needed for smaller screens */
+  }
+}
+
+/* Updated code for mobile to center .makeover content horizontally */
+@media only screen and (max-width: 700px) {
+  .makeover {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+  }
+
+  .before,
+  .after {
+    width: 80%; /* Adjust the width as needed for smaller screens */
+    height: auto;
+  }
+
+  .tall {
+    width: 30%; /* Maintain the width as specified */
+  }
+
+  .pil {
+    margin: 5% auto; /* Center the arrow horizontally */
+  }
 }
 
 /*********TABLET********/
@@ -68,6 +101,11 @@ main {
     height: auto;
     width: 10%;
     margin: 5% 5% 5% 5%;
+  }
+
+  .makeover {
+    display: flex;
+    justify-content: center;
   }
 }
 
