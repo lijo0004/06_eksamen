@@ -27,7 +27,7 @@ video {
 
 .scroll {
   max-width: calc(100% - 10px); /* Adjust the width as needed */
-  max-height: auto; /* Set a max-height for the container */
+  height: auto; /* Set a max-height for the container */
   overflow-x: scroll; /* Changed to scroll for horizontal scrollbar */
   white-space: nowrap;
 }
