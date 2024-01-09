@@ -4,3 +4,20 @@
   overflow-x: scroll; /* Changed to scroll for horizontal scrollbar */
   white-space: nowrap;
 }
+
+@media only screen and (min-width: 701px) {
+  .left-right {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right,
+  .left {
+    flex: 1;
+    max-width: 50%; /* Each takes up half of the screen */
+  }
+
+  .right {
+    order: 2; /* Set the order to 2, making it appear on the right */
+  }
+}
