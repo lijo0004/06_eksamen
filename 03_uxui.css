@@ -1,0 +1,36 @@
+/* Common styles for all screen sizes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-size: calc(16px + 1vw);
+  line-height: calc(1.5 + 0.1vw);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+.sprite_container {
+  padding-top: 15vh; /* Adjust the top padding as needed */
+  padding-bottom: 15vh; /* Adjust the bottom padding as needed */
+  overflow: hidden;
+}
+
+.pattern-background {
+  width: 100%;
+  height: 10vw; /* Adjusted to a percentage of the viewport width */
+  background: url("img/svg/SVG/fullcurve.svg");
+  background-repeat: repeat-x; /* Ensure the pattern repeats along the x-axis */
+  background-size: auto 100%; /* Adjusted to auto for the x-axis and 100% for the y-axis */
+}

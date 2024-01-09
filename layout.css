@@ -50,6 +50,98 @@ main {
 }
 
 /*************************03_cremekrukken***************************/
+/* Your existing CSS styles */
+
+/* Your existing CSS styles */
+
+/* Your existing CSS styles */
+
+.makeover {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.before,
+.after,
+.pil {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.before,
+.after {
+  max-width: 100%; /* Adjust as needed */
+}
+
+.pil {
+  max-width: 30%; /* Adjust as needed */
+  margin: 0 auto; /* Center the arrow */
+}
+
+/* Adjust the max-width for lantern images */
+.makeover .before[src*="light_lantern"],
+.makeover .after[src*="dark_lanterne"] {
+  max-width: 100%; /* Adjust as needed */
+}
+
+/* Mobile Layout - Single column */
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+  .makeover {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Desktop Layout - Three columns */
+@media only screen and (min-width: 701px) {
+  .makeover {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center; /* Center items vertically in each column */
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .makeover .before,
+  .makeover .after {
+    grid-column: span 1;
+  }
+
+  .makeover .pil {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}
+
+/* Adjust the max-width for lantern images */
+.makeover .before[src*="light_lantern"],
+.makeover .after[src*="dark_lanterne"] {
+  max-width: 40%; /* Adjust as needed */
+}
+
+/* Mobile Layout - Single column */
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+  .makeover .before,
+  .makeover .after,
+  .makeover .pil {
+    max-width: 100%; /* Adjust as needed for mobile */
+  }
+}
+
+/* Desktop Layout - Three columns */
+@media only screen and (min-width: 701px) {
+  .makeover .before,
+  .makeover .after {
+    max-width: 100%; /* Adjust as needed for desktop */
+  }
+
+  .makeover .pil {
+    max-width: 30%; /* Adjust as needed for desktop */
+  }
+}
+
+/*************************************/
 @media only screen and (min-width: 701px) {
   .grid {
     display: grid;
@@ -70,23 +162,6 @@ main {
   .img_3 {
     grid-column: 2/3;
     grid-row: 1/3;
-  }
-
-  .makeover {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  .before {
-    grid-column: 1/3;
-  }
-
-  .pil {
-    grid-column: 3/4;
-  }
-
-  .after {
-    grid-column: 4/6;
   }
 }
 
