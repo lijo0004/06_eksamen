@@ -35,6 +35,13 @@ main {
   background-size: auto 100%; /* Adjusted to auto for the x-axis and 100% for the y-axis */
 }
 
+.scroll {
+  max-width: calc(100% - 10px); /* Adjust the width as needed */
+  height: auto; /* Set a max-height for the container */
+  overflow-x: scroll; /* Changed to scroll for horizontal scrollbar */
+  white-space: nowrap;
+}
+
 /*********TABLET********/
 
 /**********KOPI*********/

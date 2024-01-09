@@ -34,12 +34,43 @@ main {
   background-size: auto 100%; /* Adjusted to auto for the x-axis and 100% for the y-axis */
 }
 
-.pil {
-  transform: rotate(90deg);
+/*********MOBILE********/
+@media only screen and (max-width: 700px) {
+  .makeover img {
+    float: none;
+  }
+  .pil {
+    transform: rotate(90deg);
+    height: auto;
+    width: 20%;
+    margin: 5% 5% 5% 40%;
+  }
 }
+
 /*********TABLET********/
 
 /**********PC************/
+
+@media only screen and (min-width: 701px) {
+  .before,
+  .after {
+    float: left;
+    width: 40%;
+    height: auto;
+  }
+  .tall {
+    height: 10%;
+    width: auto;
+  }
+  .pil {
+    float: left;
+    transform: none;
+    height: auto;
+    width: 10%;
+    margin: 5% 5% 5% 5%;
+  }
+}
+
 @media only screen and (min-width: 701px) {
   .left-right {
     display: flex;
