@@ -16,9 +16,70 @@ body {
   line-height: calc(1.5 + 0.1vw);
 }
 
+/* Add these new styles for margin and padding */
+
 main {
   max-width: 1200px;
   margin: 0 auto 0 auto;
+  padding: 20px; /* Add padding for the entire main content */
+}
+
+.background_img_04 {
+  margin-bottom: 20px; /* Add margin to the header section */
+}
+
+.left-right,
+.float,
+.left-middle-right,
+.makeover,
+.sprite {
+  margin-bottom: 40px; /* Add margin between each section */
+}
+
+.left,
+.right,
+.text,
+.float-right,
+.left_02,
+.middle,
+.right_02,
+.before,
+.after,
+.left_2,
+.right_2 {
+  padding: 20px; /* Add padding to each content block */
+}
+
+.left-right img,
+.float-right img,
+.sprite img,
+.makeover img {
+  margin-bottom: 20px; /* Add margin below images */
+}
+
+/* Specific adjustments for larger screens (PC) */
+@media only screen and (min-width: 701px) {
+  .left-right,
+  .float,
+  .left-middle-right,
+  .makeover,
+  .sprite {
+    margin-bottom: 60px; /* Adjust margin for larger screens */
+  }
+
+  .left,
+  .right,
+  .text,
+  .float-right,
+  .left_02,
+  .middle,
+  .right_02,
+  .before,
+  .after,
+  .left_2,
+  .right_2 {
+    padding: 30px; /* Adjust padding for larger screens */
+  }
 }
 
 .sprite_container {
