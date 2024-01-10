@@ -74,8 +74,8 @@ video {
 }
 
 .scroll img {
-  width: 50%; /* Set a fixed width for the images */
-  height: 200px; /* Set a fixed height for the images */
+  width: auto; /* Set a fixed width for the images */
+  max-height: 1000px; /* Set a fixed height for the images */
   margin-right: 5px; /* Adjust the margin as needed */
   display: inline-block; /* Display images in a single line */
 }
