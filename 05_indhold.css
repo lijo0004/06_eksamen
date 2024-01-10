@@ -1,3 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-size: calc(16px + 1vw);
+  line-height: calc(1.5 + 0.1vw);
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+}
+
+.sprite_container {
+  padding-top: 15vh; /* Adjust the top padding as needed */
+  padding-bottom: 15vh; /* Adjust the bottom padding as needed */
+  overflow: hidden;
+}
+
+.pattern-background {
+  width: 100%;
+  height: 5vw; /* Adjusted to a percentage of the viewport width */
+  background: url("img/svg/SVG/fullcurve.svg");
+  background-repeat: repeat-x; /* Ensure the pattern repeats along the x-axis */
+  background-size: auto 100%; /* Adjusted to auto for the x-axis and 100% for the y-axis */
+}
+
 .iframe-wrapper {
   position: relative;
   width: 100%;
@@ -30,6 +66,18 @@ video {
   height: auto; /* Set a max-height for the container */
   overflow-x: scroll; /* Changed to scroll for horizontal scrollbar */
   white-space: nowrap;
+}
+
+.scroll {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks to keep items in a single line */
+}
+
+.scroll img {
+  width: 50%; /* Set a fixed width for the images */
+  height: 200px; /* Set a fixed height for the images */
+  margin-right: 5px; /* Adjust the margin as needed */
+  display: inline-block; /* Display images in a single line */
 }
 
 @media only screen and (min-width: 701px) {

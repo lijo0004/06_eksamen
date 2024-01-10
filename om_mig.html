@@ -7,10 +7,46 @@
     <title>Om mig</title>
     <meta name="robots" content="no Index">
     <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="02_web.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
+    <div class="topnav" id="myTopnav">
+        <div class="logo-container">
+            <a href="index.html"><img src="img/svg/SVG/SVG/icon_hvid.svg" alt="mit Logo" class="logo"></a>
+        </div>
+        <a href="om_mig.html">Om mig</a>
+        <a href="02_web.html">Grundlæggende Web</a>
+        <a href="03_uxui.html">Cremekrukken</a>
+        <a href="04_animation.html">Animation</a>
+        <a href="05_indhold.html">Pleasant</a>
+        <a href="javascript:void(0);" id="burger_knap" onclick="toggleMenu()">&#9776;</a>
+    </div>
+
+    <div id="burger_menu" class="hide" style="padding-left:16px">
+        <a href="om_mig.html">
+            <p>Om mig</p>
+        </a>
+        <a href="02_web.html">
+            <p>Grundlæggende Web</p>
+        </a>
+        <a href="03_uxui.html">
+            <p>Cremekrukken</p>
+        </a>
+        <a href="04_animation.html">
+            <p>Animation</p>
+        </a>
+        <a href="05_indhold.html">
+            <p>Pleasant</p>
+        </a>
+    </div>
     <main>
         <div class="cv-container">
             <div class="left-section">
@@ -26,9 +62,9 @@
                         </div>
                         <div class="about-me">
                             <h2>Om mig</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam dolorem cumque,
-                                libero necessitatibus maiores rem in repellat natus fuga omnis quisquam consequatur
-                                neque suscipit exercitationem eligendi officiis id eius.</p>
+                            <p>Mit navn er Line og jeg bor i Nordvestkarteret på Nørrebro. Jeg har tidligere læst
+                                Ernæring og Sundhed og jeg er nu startet på multimediedesign, fordi jeg synes det lød
+                                spændende at prøve at arbejde med noget kreativt.</p>
                         </div>
                     </div>
 
@@ -83,34 +119,37 @@
 
                 </div>
                 <div class="projects">
-                    <h2>Tidliggere projekter</h2>
+                    <h2>Tidligere projekter</h2>
                     <div class="project-container">
                         <div class="project">
-                            <a href="project1-portfolio-link.html">
-                                <p class="mini-title">Studiestartsprøve</p>
+                            <p class="mini-title">Studiestartsprøve</p>
+                            <a href="02_web.html">
                                 <img src="img/webp/02/komponenter.webp" alt="03_uxui">
                                 <p>I grundlæggende web kan i læse mit første projekt hvor jeg først lærte om css, html,
                                     at bruge grid og om responsivt design samt...</p>
                             </a>
                         </div>
                         <div class="project">
-                            <a href="project2-portfolio-link.html">
-                                <p class="mini-title">Bag om Cremekrukken</p>
+                            <p class="mini-title">Bag om Cremekrukken</p>
+                            <a href="03_uxui.html">
+
                                 <img src="img/03_cremekrukken/webp/cremekrukken.webp" alt="cremekrukken">
                                 <p>Her kan i læse om bloggen Cremekrukken og hvordan den kom til helt fra idé og
                                     reachearch til prototype og responsiv hjemmeside...</p>
                             </a>
                         </div>
                         <div class="project">
-                            <a href="project3-portfolio-link.html">
-                                <p class="mini-title">Den fortryllede skov</p>
+                            <p class="mini-title">Den fortryllede skov</p>
+                            <a href="04_animation.html">
+
                                 <img src="img/04_animation/Webp/startskærm.webp" alt="spil">
                                 <p>Kig her og se hvordan jeg udviklede mit enkle spil...</p>
                             </a>
                         </div>
                         <div class="project">
-                            <a href="project4-portfolio-link.html">
-                                <p class="mini-title">Pleasant</p>
+                            <p class="mini-title">Pleasant</p>
+                            <a href="05_indhold.html">
+
                                 <img src="img/05_pleasant/webp/05_pleasant_moodboard_redesign.webp" alt="moodboard">
                                 <p>Læs her hvordan vi i et gruppeprojekt lavede et udkast til et RE-design for butikken
                                     Pleasant...</p>

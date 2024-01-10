@@ -6,11 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studiestartsprøve</title>
     <meta name="robots" content="no Index">
-    <link rel="stylesheet" href="_layout.css">
     <link rel="stylesheet" href="02_web.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="topnav" id="myTopnav">
+        <div class="logo-container">
+            <a href="index.html"><img src="img/svg/SVG/SVG/icon_hvid.svg" alt="mit Logo" class="logo"></a>
+        </div>
+        <a href="om_mig.html">Om mig</a>
+        <a href="02_web.html">Grundlæggende Web</a>
+        <a href="03_uxui.html">Cremekrukken</a>
+        <a href="04_animation.html">Animation</a>
+        <a href="05_indhold.html">Pleasant</a>
+        <a href="javascript:void(0);" id="burger_knap" onclick="toggleMenu()">&#9776;</a>
+    </div>
+
+    <div id="burger_menu" class="hide" style="padding-left:16px">
+        <a href="om_mig.html">
+            <p>Om mig</p>
+        </a>
+        <a href="02_web.html">
+            <p>Grundlæggende Web</p>
+        </a>
+        <a href="03_uxui.html">
+            <p>Cremekrukken</p>
+        </a>
+        <a href="04_animation.html">
+            <p>Animation</p>
+        </a>
+        <a href="05_indhold.html">
+            <p>Pleasant</p>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
     <main>
         <h1>Studiestartsprøve</h1>
         <section class="grid_1-1-1">
@@ -31,18 +67,9 @@
 
                 <div>
                     <h2>Fra tanke til nettet</h2>
-                    <h3>Luftkøling</h3>
-                    <p>Den mest almindelige måde at køle en computer på, er luftkøling. Der sidder ganske
-                        enkelt én eller flere ventilatorer i computeren, som leder den varme luft væk og
-                        køligere luft ind. De kan larme noget så frygteligt, men i dag kan man også købe
-                        luftkølere, der næsten intet siger og alligevel løser opgaven at køle CPU og resten
-                        af computeren.</p>
-                    <h3>Vandkøling</h3>
-                    <p>Skal din køling være fancy og futuristisk, er vandkøling måske et kig værd. Det
-                        handler helt kort om at bruge vand (i et lukket system) til at holde temperaturen i
-                        din computer på et fornuftigt niveau. Når det kan være fancy og futuristisk, så
-                        skyldes det selvfølgelig, at det kræver pumper, rør og andet udstyr at få væsken
-                        rundt.</p>
+                    <p>Vi lærte om hvordan man kan forvandle en wirefram til kode og hvordan man via filezilla kan ligge
+                        det ud på nettet.</p>
+
                 </div>
                 <div class="1-billede"><img src="img/webp/02/komponenter.webp" alt="screenshot"></div>
             </div>
@@ -51,9 +78,9 @@
                 <div class="4-billede"><img src="img/webp/02/kodecss.webp" alt="kodecss"></div>
                 <div>
                     <h2>Kodningseksempel</h2>
-                    <p>Bundkortet er "pladen", du sætter din CPU, din GPU og dine RAM fast i. Det er på den måde
-                        ret afgørende, at dit motherboard dvs. dit bundkort passer til resten af din hardware.
-                        Ellers bliver det en "flaskehals".</p>
+                    <p>Her bruges media queries til at sikrer responsivitet på hjemmesiden så indholdet tilpasses
+                        forskellige skærmstørrelser. Til større skærme bruges en kombi af flex og grid til at opnå det
+                        unikke udtryk.</p>
                 </div>
                 <div class="3-billede"><img src="img/webp/02/kodehtml.webp" alt="kodehtml"></div>
             </div>

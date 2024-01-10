@@ -6,21 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video og firmaforløb</title>
     <meta name="robots" content="no Index">
-    <link rel="stylesheet" href="_layout.css">
+    <link rel="stylesheet" href="04_animation.css">
     <link rel="stylesheet" href="05_indhold.css">
+    <link rel="stylesheet" href="02_web.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+    <div class="topnav" id="myTopnav">
+        <div class="logo-container">
+            <a href="index.html"><img src="img/svg/SVG/SVG/icon_hvid.svg" alt="mit Logo" class="logo"></a>
+        </div>
+        <a href="om_mig.html">Om mig</a>
+        <a href="02_web.html">Grundlæggende Web</a>
+        <a href="03_uxui.html">Cremekrukken</a>
+        <a href="04_animation.html">Animation</a>
+        <a href="05_indhold.html">Pleasant</a>
+        <a href="javascript:void(0);" id="burger_knap" onclick="toggleMenu()">&#9776;</a>
+    </div>
+
+    <div id="burger_menu" class="hide" style="padding-left:16px">
+        <a href="om_mig.html">
+            <p>Om mig</p>
+        </a>
+        <a href="02_web.html">
+            <p>Grundlæggende Web</p>
+        </a>
+        <a href="03_uxui.html">
+            <p>Cremekrukken</p>
+        </a>
+        <a href="04_animation.html">
+            <p>Animation</p>
+        </a>
+        <a href="05_indhold.html">
+            <p>Pleasant</p>
+        </a>
+    </div>
     <main>
 
         <img src="img/05_pleasant/webp/pleasant_logo.webp" alt="pleasant">
 
         <div class="left-right">
             <img src="img/05_pleasant/webp/05_pleasant_set_udefra.webp" alt="pleasant butik set udefra" class="left">
-            <p class="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, reprehenderit. Quod vel
-                veniam fugiat modi officiis aliquid est sapiente quia numquam optio doloribus, maiores repellendus,
-                tenetur architecto voluptatum ad minima.</p>
+            <p class="right">Pleasant er et tøjmærke der har fokus på bæredygtighed så man kan købe tøj med god
+                samvitighed.</p>
         </div>
 
 
@@ -51,12 +86,24 @@
             <img src="img/05_pleasant/webp/BERT_dyr-billig.webp">
         </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eaque distinctio esse officia, ut quos
-            reiciendis ab non in rem mollitia voluptates hic sequi eius cum labore quaerat repellendus. Ea.</p>
+        <p>Alt i alt hælder testpersonerne til siden er tiltalende, harmonisk, overvejende autentisk, professionel,
+            moderne, interessant og varm, samt overvejende feminin, stolt, unikt og dyr.</p>
         <h3>Tænke-højt og 5-sek test</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, nesciunt tempora mollitia ipsam
-            voluptates, aut error itaque molestias non sunt explicabo dolores sit saepe. Quam veritatis sint nesciunt
-            pariatur delectus!</p>
+        <p>Til vores 5-sekunders test var vores testperson inde på forsiden, hvor der er en video i toppen. Hun
+            så nemt at det var en tøjforretning og mente at den så alvorlig ud. Hun bemærkede ikke at
+            hjemmesiden specifikt solgte bæredygtigt tøj, og man kan diskutere om et alvorligt indtryk er
+            gavnligt eller ej. På den ene side er et alvorligt indtryk godt hvis man skal virke troværdig indenfor
+            et alvorligt emne som bæredygtighed, men det indtryk stemmer ikke helt overens med den lidt
+            lettere stemning som ejerne gav udtryk for at de ønskede.</p>
+        <p>Til tænk højt siden gik det op for vores testperson at det var et tøjmærke der havde fokus på
+            bæredygtighed. Hun sagde det var lidt ærgerligt at hun ikke så det i femsekunders testen. Hun
+            pointerede at hjemmesiden fremstod moderne hvilket stemte overens med vores resultater fra
+            BERT-testen. Hun syntes at det skulle fremgå mere tydeligt, at der var tale om et bæredygtigt
+
+            tøjmærke. Hun mente at fonten og de bølgede linjer gjorde at hjemmesiden fremstod lidt hipster-
+            agtigt og ungdommeligt. Hun forklarede at hun selv var mere til et klassisk design, hvilket kan være
+
+            svært at udlede noget reelt fra med blot en enkelt testperson.</p>
 
 
         <div class="sprite">
@@ -71,19 +118,17 @@
             <img src="img/svg/SVG/SVG/pil.svg" alt="pil" class="pil">
             <img src="img/05_pleasant/webp/05_pleasant_styletile_redesign.webp" alt="styletile" class="after">
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, cumque commodi perspiciatis quia assumenda
-            dolores temporibus sint dolore facere officiis velit doloremque ea adipisci maiores rem doloribus possimus
-            laudantium pariatur?</p>
+        <p>Selvom vi alle var blevet enige om hvordan styletilen skulle se ud betød det ikke at vi fortolkede den ens.
+        </p>
 
         <h2>Forskellige fortolkninger</h2>
         <div class="scroll">
             <!-- AI Skov Images -->
-            <img src="img/05_pleasant/webp/BERT_dyr-billig.webp">
-            <img src="img/05_pleasant/webp/BERT_dyr-billig.webp">
-            <img src="img/05_pleasant/webp/BERT_dyr-billig.webp">
-            <img src="img/05_pleasant/webp/BERT_dyr-billig.webp">
-            <img src="img/05_pleasant/webp/BERT_dyr-billig.webp">
-            <img src="img/05_pleasant/webp/BERT_dyr-billig.webp">
+            <img src="img/05_pleasant/webp/shop.webp">
+            <img src="img/05_pleasant/webp/stories.webp">
+            <img src="img/05_pleasant/webp/style.webp">
+            <img src="img/05_pleasant/webp/valuesefter.webp">
+
         </div>
 
 
@@ -92,11 +137,12 @@
             <img src="img/05_pleasant/webp/05_pleasant_styletile_redesign.webp" alt="styletile" class="left">
             <img src="img/05_pleasant/webp/videostil_redesign.webp" alt="vores videostil" class="right">
         </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis enim ullam harum nostrum. Atque quia
-            optio dolorum molestias fuga odio error labore ad, accusamus modi id quod doloremque odit pariatur.</p>
+        <p>Efter vi så hinandens redeigne på baggrund af styletilen talte vi også om at vi måske skulle have afstemt
+            stilen for siden med videostilen. Vi besluttede at rette lidt til så siderne mindede mere om hinanden og gav
+            det et mere simpelt og stilrent udtryk så det ikke gik så meget i kambolage med videostilen. </p>
         <div class="makeover">
-            <img src="" alt="values before" class="before">
-            <img src="img/svg/SVG/SVG/pil.svg" alt="pil" class="pil">
+            <img src="img/05_pleasant/webp/valuesbefore.webp" alt="values before" class="before">
+            <img src="img/05_pleasant/webp/valuesefter.webp" alt="pil" class="pil">
             <img src="" alt="values after" class="after">
         </div>
 
@@ -107,9 +153,9 @@
             <img src="img/05_pleasant/webp/videostil_nu.webp" alt="deres videostil" class="left">
             <img src="img/05_pleasant/webp/videostil_redesign.webp" alt="RE-design videostil" class="right">
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur dolorem reiciendis nemo
-            cupiditate mollitia amet assumenda, odit, modi perferendis exercitationem odio. Porro sunt temporibus
-            eligendi, optio rem incidunt deleniti.
+        <p>Vi ville overordnet godt kører i lidt samme videostil som de allerede gjorde da vi under interviewet blev
+            informeret om at de fortrak mere afslappede og autentiske intervies og det passede godt med den videostil de
+            allerede brugte.
         </p>
         <div class="iframe-wrapper">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/s2HgdR51fQc?si=dwOK1Q2glmxfXj69"
