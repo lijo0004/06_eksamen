@@ -70,7 +70,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    max-height: 1000;
+    max-height: 1000px;
   }
 
   .img_1 {
@@ -104,4 +104,23 @@ main {
   p {
     grid-column: 3/4;
   }
+}
+
+.scroll {
+  max-width: calc(100% - 10px); /* Adjust the width as needed */
+  height: auto; /* Set a max-height for the container */
+  overflow-x: scroll; /* Changed to scroll for horizontal scrollbar */
+  white-space: nowrap;
+}
+
+.scroll {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks to keep items in a single line */
+}
+
+.scroll img {
+  width: auto; /* Set a fixed width for the images */
+  max-height: 500px; /* Set a fixed height for the images */
+  margin-right: 5px; /* Adjust the margin as needed */
+  display: inline-block; /* Display images in a single line */
 }
