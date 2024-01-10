@@ -72,3 +72,24 @@ main {
   font-weight: bold;
   margin-bottom: 5px;
 }
+
+.contact-info {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.about-me p {
+  padding-left: 20px;
+}
+
+.education p {
+  padding-left: 30px;
+}
+
+.education h2 {
+  padding-top: 40px;
+}
+
+.projects h2 {
+  padding-top: 50px;
+}

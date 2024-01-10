@@ -96,3 +96,20 @@ video {
     order: 2; /* Set the order to 2, making it appear on the right */
   }
 }
+
+.pleasant {
+  max-width: 400px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+.pad {
+  margin-bottom: 60px;
+}
+
+p {
+  padding-left: 10px;
+}

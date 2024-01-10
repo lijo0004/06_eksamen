@@ -181,3 +181,19 @@ main {
     grid-column: 3/4;
   }
 }
+
+p {
+  padding-left: 10px;
+}
+
+.pad {
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+h1 {
+  padding-bottom: 60px;
+}
