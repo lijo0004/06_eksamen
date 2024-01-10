@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto 0 auto;
 }
 
@@ -28,7 +28,7 @@ main {
 
 .pattern-background {
   width: 100%;
-  height: 10vw; /* Adjusted to a percentage of the viewport width */
+  height: 5vw; /* Adjusted to a percentage of the viewport width */
   background: url("img/svg/SVG/fullcurve.svg");
   background-repeat: repeat-x; /* Ensure the pattern repeats along the x-axis */
   background-size: auto 100%; /* Adjusted to auto for the x-axis and 100% for the y-axis */
@@ -64,7 +64,7 @@ main {
   }
 
   .float-right img {
-    width: 400px; /* Set a fixed width for the images */
+    width: 50%; /* Set a fixed width for the images */
     height: 200px; /* Set a fixed height for the images */
     margin-right: 5px; /* Adjust the margin as needed */
     display: inline-block; /* Display images in a single line */
